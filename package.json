@@ -15,7 +15,7 @@
     "uuid": "^3.1.0"
   },
   "scripts": {
-    "start": "concurrently \"npm run react\" \"npm run server\"",
+    "start": "concurrently \"PORT=3231 npm run react\" \"cd server && PORT=8081 npm run server\"",
     "react": "react-scripts start",
     "server": "nodemon src/server/index.js",
     "build": "react-scripts build",
