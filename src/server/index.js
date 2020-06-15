@@ -16,7 +16,7 @@ httpServer.listen(8081, () => {
 var app = require('http').createServer()
 var io = module.exports.io = require('socket.io')(app)
 
-const PORT2 = process.env.PORT || 3231
+const PORT2 = 3231
 
 const SocketManager = require('./SocketManager')
 
